@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+   <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>FIRST ASSIGNMENT</title>
+      <style>
+      h1{
+         color: rgb(129, 19, 239);
+         font-size: 42px;
+         text-align: center;
+         background-color:yellow;
+         padding: 20px;
+         margin: 0px;
+      } 
+      h1:hover{
+color: aquamarine;
+    }
+      p{
+         text-align: center;
+         color: green;
+         text-transform: uppercase;
+      }
+      li{
+         color: purple;
+      }
+      strong{
+         color: orangered;
+      }
+      .free{
+         color: rgb(3, 8, 6)
+
+      }
+      .freeStory{
+         color: rgb(7, 124, 154);
+         text-decoration: underline;
+      }
+      ul{
+         list-style-type: none;
+         
+      }
+      .button{
+         display: block;
+         margin: 0 auto;
+      }
+      </style>
+    </head>
+<body>
+<h1>SheCodes</h1>
+
+<p>
+   <em>Coding workshop</em>
+   <hr> 
+       <ul>
+      <li> <strong>SheCodes Workshop</strong></li>
+       <li class="free">SheCodes Express</li>
+      <li class="free"> SheCodes+</li>
+   <li class="freeStory">
+      SheCodes Story</li>
+      <li class="you">
+         SheCodes stack
+      </li>
+   </ul>
+   <button>
+      Apply Now
+   </button>
+   <script>
+      function apply() {
+  let firstName = prompt("What is your first name?");
+  let age = prompt("How old are you?");
+  let heading = document.querySelector("h1");
+  if (age >= 18) {
+    heading.innerHTML = "Hi " + firstName + "! Welcome to SheCodes 👩‍💻";
+  } else {
+    heading.innerHTML =
+      "Sorry " + firstName + ", you can't apply to SheCodes.";
+  }
+}
+
+let applyButton = document.querySelector("button");
+applyButton.addEventListener("click", apply);
+      </script>
+
+
+</p>
+</body>
+</html>
