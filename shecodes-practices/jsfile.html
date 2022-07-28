@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>javascript challenge</h1>
+    <script>
+  //let city = "Nairobi" 
+  //let country = "Kenya"
+    //console.log("From", city);
+    //city = city.replace("i", "è");
+   // city = city.trim().replace("i", "ì").toUpperCase();
+    //console.log("i live in" + city + " ," + country);
+    //console.log(`i live in ${city}, ${country}!`)
+    //let number = 2.4; 
+    //console.log(number)
+    //console.log(Math.round(number));
+    //console.log(Math.ceil(number));
+    //console.log(Math.min(3.8,9.8,6,8));
+    //console.log(Math.floor(number));
+
+    //console.log(Math.random())
+    //let price(this is a variable) = 4.5;(this is the variables value)
+//console.log(Math.round(price));(this rounds a number to the nearest even number eg: 4.5 to 5)
+//console.log(Math.ceil(price));(this rounds up the number to the highest even number, 6,7 to 7)
+//console.log(Math.floor(price));(this rounds down to an even number, 4.5 to 4)
+//console.log(Math.min(4, 1, 3, 10));(this gives the lowest or minimun number, eg. btn 1,4,6 , 1 is the min)
+//function showCity(city){
+  //console.log(city);
+//}
+//let cities = ["New York", "Paris", "Nairobi", "Moscow"];
+ //cities.forEach(showCity)
+let days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+console.log(days);
+console.log(days[0]);
+console.log(days[6]);
+days[4] = "Funday";
+console.log(days);
+days.shift();
+days.shift();//this is t0 remove things from the arrays, like monday and friday are gone after using shift
+console.log(days)
+//days.forEach()
+//console.log(`Temperature on ${days[0]} is 18 degrees`);
+//console.log(`Temperature on ${days[1]} is 18 degrees`);
+//console.log(`Temperature on ${days[2]} is 18 degrees`);
+//console.log(`Temperature on ${days[3]} is 18 degrees`);
+//(`Temperature on ${days[4]} is 18 degrees`);
+//console.log(`Temperature on ${days[5]} is 18 degrees`);
+let city = {
+  name: "Sydney",
+  country: "Australia",
+  year: 1998,
+  englishSpeaking: true
+};
+console.log(city)
+let cities = [
+  {
+  name: "Berlin",
+  country: "Germany",
+  year: 1995,
+  englishSpeaking: true
+},
+{
+  name: "mexico",
+  country: "mehiko",
+  year: 1993,
+  englishSpeaking: true
+},
+{
+  name: "New York",
+  country: "Usa",
+  year: 2010,
+  englishSpeaking: true
+},
+
+]
+console.log(cities[2].country)
+//let weather = {
+  //temp: 20,
+  //humidity: 80,
+  //windspeed: 10
+//};
+//console.log(weather.humidity)
+//console.log(weather.temp)
+//let weather = {
+//temp: 30,
+//humidity: 40
+//}
+//console.log(weather.temp)
+
+ //let Australia = [ 
+ //{name:"Sydney"},
+ //{name:"Melbourne"},
+ //{name: "Perth"}
+//]
+//console.log(Australia[0])
+//console.log(Australia[1])
+//console.log(Australia[2])
+// Challenge
+// 1. Create a function isWindy and alert 'It is windy'
+// 2. Call the function twice
+//function isWindy(speed) {
+   //if(speed > 5){
+  //alert("It is windy");
+//}
+  //else{
+    //alert("it is not windy");
+  //}
+//}
+//debugger;
+//let currentSpeed = prompt("what is the current speed");
+//isWindy(currentSpeed);
+
+//isWindy(40);
+//isWindy(2);
+ function isCold(temperature){
+  if (temperature > 10)
+  {
+    return false;
+  }
+  else{
+    return true;
+  }
+ }
+ //let cold = isCold(0);
+ let temperature = prompt("input the  temp you hooligan");
+ 
+ if(isCold(temperature)){
+  alert("its really cold");
+ }
+ else{
+  alert("its freaking hot");
+ }
+
+ //alert(cold);
+ //console.log(isCold)
+    </script>
+  </body>
+</html>
