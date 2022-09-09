@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>responsive grids</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="text-center">SheCodes🧠💻</h1>
+    <div class="d-flex justify-content-evenly">
+      <!--this here is the bootstrap css class for flexbox grid 
+    and spaces out the numbers evenly like 1    2    3-->
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <hr />
+    <!--another way to create a grid flex efectively that response well with evry screen is using a 
+div container and a row and col as shown below-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <!--when u say u want the be responsive it means u want your 
+            content to be on top of each other hence use (md-4) which is meduim sized
+        so whenever ur window is smaller content goes on top of one another as a row while 
+    enlarged it takes up column form again-->
+          shecodes responsive week
+        </div>
+        <div class="col-md-4 text-center">shecodes responsive week</div>
+        <div class="col-md-4 text-center">shecodes responsive week</div>
+      </div>
+    </div>
+    <hr />
+
+    <!--now we gonna use another grid with nested rows-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 border">shecodes responsive week</div>
+        <div class="col-sm-3 border">shecodes responsive week</div>
+        <div class="col-sm-3 border">shecodes responsive week</div>
+        <div class="col-sm-3 border">
+          <div class="row">
+            <div class="col-md-6 border">shecodes responsive week</div>
+            <div class="col-md-6 border">shecodes responsive week</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
